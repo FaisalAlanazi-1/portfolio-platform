@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faisal Alanazi · Choose your experience</title>
+  <meta name="description" content="Two versions of one portfolio. Choose one to explore.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230b0b0c%27/%3E%3Crect x=%277%27 y=%278%27 width=%2718%27 height=%2713%27 rx=%273%27 fill=%27none%27 stroke=%27%23ecebe7%27 stroke-width=%272.4%27/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <h1>Hi, I’m Faisal.</h1>
+      <p>I build apps, explore game development, and turn ideas into digital experiences.</p>
+    </header>
+
+    <section class="stage" data-sel="a" aria-label="Choose a portfolio version">
+      <div class="screen" id="monitor">
+        <div class="bar">
+          <h2>Choose your experience</h2>
+          <p class="keys" aria-hidden="true"><kbd>←</kbd><kbd>→</kbd> switch <kbd>Enter</kbd> open</p>
+        </div>
+
+        <div class="options" role="group" aria-label="Portfolio versions. Use the left and right arrow keys to switch.">
+          <a class="option" href="{{A_URL}}" data-v="a" aria-current="true">
+            <img src="assets/previews/version-a.webp" width="1440" height="810" alt="Preview of Version A: a dark one-page portfolio with a gradient monogram and the name Faisal Alanazi">
+            <span class="meta">
+              <span class="label"><i aria-hidden="true"></i>Version A</span>
+              <span class="desc">A one-page portfolio from a simple prompt.</span>
+            </span>
+          </a>
+          <a class="option" href="{{B_URL}}" data-v="b">
+            <img src="assets/previews/version-b.webp" width="1440" height="810" alt="Preview of Version B: a monochrome portfolio with a portrait, an animated backdrop and a pill navigation">
+            <span class="meta">
+              <span class="label"><i aria-hidden="true"></i>Version B</span>
+              <span class="desc">A multi-page portfolio from a detailed prompt.</span>
+            </span>
+          </a>
+        </div>
+
+        <div class="foot">
+          <p class="status" id="status" aria-live="polite">Version A selected</p>
+          <a class="enter" id="enter" href="{{A_URL}}"><span id="enter-label">Enter Version A</span> <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Decorative controller: echoes the selected version. -->
+      <svg class="controller" viewBox="0 20 400 250" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="padBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#303031"/>
+            <stop offset="1" stop-color="#151516"/>
+          </linearGradient>
+          <linearGradient id="padCap" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4a4a4a"/>
+            <stop offset="1" stop-color="#242425"/>
+          </linearGradient>
+        </defs>
+        <g stroke-linejoin="round" stroke-linecap="round">
+          <!-- shoulder buttons -->
+          <g transform="rotate(-4 142 53)"><rect class="part part-l" x="104" y="44" width="76" height="18" rx="9" fill="#2b2b2c" stroke="#d9d8d3" stroke-width="2"/></g>
+          <g transform="rotate(4 258 53)"><rect class="part part-r" x="220" y="44" width="76" height="18" rx="9" fill="#2b2b2c" stroke="#d9d8d3" stroke-width="2"/></g>
+
+          <!-- body: symmetrical, two grips pointing down -->
+          <path d="M120 70 C150 58 250 58 280 70 C318 76 340 100 352 140 C364 180 372 220 360 236 C346 252 322 246 308 226 C296 208 288 186 270 176 C250 168 150 168 130 176 C112 186 104 208 92 226 C78 246 54 252 40 236 C28 220 36 180 48 140 C60 100 82 76 120 70Z" fill="url(#padBody)" stroke="#ecebe7" stroke-width="2.6"/>
+          <path d="M126 80 C154 70 246 70 274 80 M62 148 C68 120 84 98 108 88 M338 148 C332 120 316 98 292 88" fill="none" stroke="#5a5a59" stroke-width="2"/>
+
+          <!-- touch surface and small center buttons -->
+          <rect x="170" y="84" width="60" height="28" rx="9" fill="#1e1e1f" stroke="#7a7a78" stroke-width="1.6"/>
+          <circle cx="146" cy="98" r="3.4" fill="#8a8a87"/>
+          <circle cx="254" cy="98" r="3.4" fill="#8a8a87"/>
+
+          <!-- directional pad (left) -->
+          <circle cx="118" cy="118" r="34" fill="none" stroke="#4a4a49" stroke-width="1.6"/>
+          <path class="part part-l" d="M110 92 H126 V110 H144 V126 H126 V144 H110 V126 H92 V110 H110Z" fill="#2f2f30" stroke="#ecebe7" stroke-width="1.9"/>
+
+          <!-- face buttons (right) -->
+          <circle cx="282" cy="118" r="34" fill="none" stroke="#4a4a49" stroke-width="1.6"/>
+          <g class="part part-r" fill="#2f2f30" stroke="#ecebe7" stroke-width="1.9">
+            <circle cx="282" cy="98" r="10"/><circle cx="282" cy="138" r="10"/><circle cx="262" cy="118" r="10"/><circle cx="302" cy="118" r="10"/>
+          </g>
+
+          <!-- analog sticks -->
+          <g>
+            <circle cx="168" cy="150" r="21" fill="#1c1c1d" stroke="#ecebe7" stroke-width="2"/>
+            <circle cx="168" cy="150" r="13" fill="url(#padCap)" stroke="#8a8a87" stroke-width="1.4"/>
+            <path d="M160 146 C163 142 169 141 174 143" fill="none" stroke="#7a7a78" stroke-width="1.6"/>
+            <circle cx="232" cy="150" r="21" fill="#1c1c1d" stroke="#ecebe7" stroke-width="2"/>
+            <circle cx="232" cy="150" r="13" fill="url(#padCap)" stroke="#8a8a87" stroke-width="1.4"/>
+            <path d="M224 146 C227 142 233 141 238 143" fill="none" stroke="#7a7a78" stroke-width="1.6"/>
+          </g>
+          <circle cx="200" cy="150" r="5.5" fill="#2f2f30" stroke="#8a8a87" stroke-width="1.4"/>
+        </g>
+      </svg>
+    </section>
+  </main>
+</body>
+</html>

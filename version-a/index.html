@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>فيصل العنزي | المحفظة الشخصية</title>
+  <meta name="description" content="فيصل العنزي، طالب نظم معلومات مهتم بتطوير التطبيقات والذكاء الاصطناعي وتصميم المنتجات الرقمية.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effects.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="bg" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="فيصل العنزي">ف<span>.</span></a>
+      <button class="nav-toggle" aria-label="القائمة" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu">
+        <a href="#about">نبذة عني</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <canvas id="net" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">مرحباً، أنا</p>
+          <h1>فيصل العنزي</h1>
+          <p class="roles"><span id="typed">مطوّر تطبيقات</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lead">طالب نظم معلومات، أبني تطبيقات وأستكشف الذكاء الاصطناعي وأهتم بتصميم المنتجات الرقمية.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">استعرض مشاريعي</a>
+            <a class="btn ghost" href="#contact">تواصل معي</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- يمكنك استبدال الحرف بصورتك: <img src="assets/photo.jpg" alt="صورة فيصل العنزي"> -->
+          <div class="avatar">ف</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>01</span> نبذة عني</h2>
+        <div class="about-grid">
+          <p class="about-text">
+            أنا فيصل العنزي، طالب نظم معلومات في جامعة الإمام محمد بن سعود الإسلامية.
+            أهتم بتطوير التطبيقات، والذكاء الاصطناعي، وتصميم المنتجات الرقمية،
+            وأحب تحويل الأفكار إلى منتجات عملية وسهلة الاستخدام.
+            <span class="placeholder" contenteditable="true">[أضف هنا فقرة قصيرة عنك: هواياتك، أهدافك، أو ما تبحث عنه]</span>
+          </p>
+          <ul class="facts">
+            <li>
+              <h3>التعليم</h3>
+              <p>نظم المعلومات — جامعة الإمام محمد بن سعود الإسلامية</p>
+            </li>
+            <li>
+              <h3>المعسكرات التدريبية</h3>
+              <p>معسكر Flutter — أكاديمية طويق</p>
+              <p>معسكر أساسيات الذكاء الاصطناعي باستخدام أدوات Meta — أكاديمية طويق</p>
+            </li>
+            <li>
+              <h3>الاهتمامات</h3>
+              <p>تطوير التطبيقات · الذكاء الاصطناعي · تصميم المنتجات الرقمية</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="section-title"><span>02</span> المهارات</h2>
+        <ul class="skills">
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>Supabase</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>03</span> المشاريع</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="tag">ذكاء اصطناعي</span>
+            <h3>مرصد <small dir="ltr">Mirsad</small></h3>
+            <p>وسيط (Proxy) بين وكيل الذكاء الاصطناعي ونماذج اللغة، يوجّه الطلبات بحسب مستوى تعقيدها، ويراقب التكاليف، ويحدّ من المحاولات الفاشلة المتكررة.</p>
+            <a class="card-link" href="https://github.com/shaimasaud5/Mirsad" target="_blank" rel="noopener noreferrer">عرض المستودع على GitHub</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">تطبيق جوال</span>
+            <h3>مستكشف السعودية <small dir="ltr">Saudi Explorer</small></h3>
+            <p>تطبيق لاكتشاف الوجهات السياحية في السعودية. حصل على المركز الثاني خلال الأسبوع الأول من معسكر Flutter.</p>
+            <span class="badge">🥈 المركز الثاني</span>
+            <a class="card-link" href="https://github.com/FaisalAlanazi-1/Saudi-Explorer" target="_blank" rel="noopener noreferrer">عرض المستودع على GitHub</a>
+          </article>
+
+          <article class="card">
+            <span class="tag">مشروع التخرج</span>
+            <h3>إنديفيرس <small dir="ltr">Indiverse</small></h3>
+            <p>تطبيق لاكتشاف الألعاب المستقلة السعودية، يربط اللاعبين بالمطورين وصنّاع المحتوى.</p>
+            <a class="card-link" href="https://github.com/INDINA-Flutter-Project/INDIVERSE" target="_blank" rel="noopener noreferrer">عرض المستودع على GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <h2 class="section-title"><span>04</span> تواصل معي</h2>
+        <p class="lead">يسعدني التواصل معك لأي فرصة أو تعاون.</p>
+        <ul class="contact-list">
+          <li><span>البريد الإلكتروني</span> <a dir="ltr" href="mailto:faisal.alanazi.aa@gmail.com">faisal.alanazi.aa@gmail.com</a></li>
+          <li><span>لينكدإن</span> <a dir="ltr" href="https://www.linkedin.com/in/faisal-alanazi-5aa50b40b" target="_blank" rel="noopener noreferrer">Faisal Alanazi</a></li>
+          <li><span>جيت هب</span> <a dir="ltr" href="https://github.com/FaisalAlanazi-1" target="_blank" rel="noopener noreferrer">FaisalAlanazi-1</a></li>
+          <li><span>إكس (تويتر)</span> <a href="#" data-placeholder>[أضف رابط حسابك]</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year">2026</span> فيصل العنزي. جميع الحقوق محفوظة.</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-launcher",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node launcher/start.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
